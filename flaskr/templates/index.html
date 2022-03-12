@@ -1,0 +1,375 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Glitch
+{% endblock title %}
+
+{% block content %}
+    <!-- HOME -->
+    <section class="home" id="home">
+        <div class="home__container container grid">
+            <div class="home__content grid">
+                <div class="home__images">
+                    <img src="{{ url_for('static', filename='img/homeImg.png') }}" class="home__images-img" alt="homeImage"/>
+                </div>
+                <div class="home__data">
+                    <h1 class="home__data-title">Glitch</h1>
+                    <h3 class="home__data-subtitle">Marketing, Diseños y Publicidad</h3>
+                    <p class="home__data-desc">
+                        Si tienes una idea para tu negocio ya sea un diseño, pagina, sitio o aplicacion web.
+                        No hagas que solo se quede en eso, contacta con nosotros y la haremos realidad.
+                    </p>
+                    <div class="home__data-btns">
+                        <a href="#contacto" class="home__data-btn">
+                            Contactame <i class="ri-send-plane-2-line home__data-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- QUIENES SOMOS -->
+    <section class="about section" id="quienesSomos">
+        <h1 class="about__title section__title">¿Quienes Somos?</h1>
+        <span class="about__subtitle section__subtitle">Nuestra presentacion</span>
+        <div class="about__content container grid">
+            <!-- 1 -->
+            <div class="about__card">
+                <div class="about__card-images">
+                    <img src="{{ url_for('static', filename='img/about1.png') }}" class="about__card-img" alt="Mejorar relaciones"/>
+                </div>
+                <div class="about__card-data">
+                    <p>
+                        Glitch es una agencia de publicidad y comunicación global, especializada en la creación de marca a partir de la estrategia,
+                        la investigación y la tecnología, donde el objetivo principal es lograr un impacto en su público y construir relaciones a largo plazo con sus clientes.
+                    </p>
+                    <br>
+                    <p>
+                        Nuestra agencia de publicidad tiene el objetivo y la motivación de hacer que tu marca sea interesante, atractiva y diferente a tu competencia.
+                    </p>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="about__card">
+                <div class="about__card-images two">
+                    <img src="{{ url_for('static', filename='img/about2.png') }}" class="about__card-img" alt="Subir de nivel"/>
+                </div>
+                <div class="about__card-data">
+                    <p>
+                        Más que una agencia de publicidad, Somos una empresa de desarrollo de proyectos de marca que a través de la planificación y creación
+                        de propuestas efectivas, llevamos tu negocio a nuevos niveles.
+                    </p>
+                    <br>
+                    <p>
+                        Por eso, creamos un equipo de trabajo capaz de dar respuestas creativas y eficientes a todas las necesidades
+                        de nuestros clientes. Asumimos el rol de consultores en marketing, descubriendo soluciones integrales para su marca.
+                        Nuevos productos, nuevos servicios, nuevos medios. Siempre con la vista puesta en el futuro.
+                    </p>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="about__card">
+                <div class="about__card-images">
+                    <img src="{{ url_for('static', filename='img/about3.png') }}" class="about__card-img three" alt="Emprendimiento y aprendizaje"/>
+                </div>
+                <div class="about__card-data">
+                    <p>
+                        Emprendimos nuestra travesía en el año 2017 con el propósito de innovar y revolucionar todo lo que hasta entonces llevábamos aprendido de
+                        manera tradicional. Más allá de brindarte un producto o servicio, nuestra pasión es ayudarte a encontrar los mejores
+                        caminos para fortalecer tu marca y emprendimiento haciendo uso de una estrategia consistente, creativa y medible.
+                    </p>
+                    <br>
+                    <p>
+                        Nos esforzamos por ser una agencia diferente y profesional, gracias a nuestro amplio equipo de trabajo, servimos a los clientes
+                        de la manera más satisfactoria posible. Utilizamos herramientas muy efectivas como marketing digital, diseño web, SEO, impacto visual, etc.
+                        para que las marcas de nuestros clientes ofrezcan una respuesta clara a sus necesidades y expectativas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICIOS -->
+    <section class="servicios section" id="servicios">
+        <h1 class="servicios__title section__title">Servicios</h1>
+        <span class="servicios__subtitle section__subtitle">Lo que ofrecemos</span>
+        <div class="servicios__container container grid">
+            <!-- 1 -->
+            <div class="servicios__content">
+                <div>
+                    <i class="ri-profile-line servicios__content-icon"></i>
+                    <h3 class="servicios__content-title">Marketing <br> Digital</h3>
+                </div>
+                <span class="servicios__content-btns">
+                    Ver Más
+                    <i class="ri-arrow-right-line"></i>
+                </span>
+                <div class="servicios__content-modal">
+                    <div class="servicios__content-modal_data">
+                        <h4 class="servicios__content-modal_title">
+                            Marketing <br> Digital
+                        </h4>
+                        <i class="ri-close-fill servicios__content-modal_close"></i>
+                        <ul class="servicios__content-modal_servicios grid">
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>Creacion de logo y papeleria.</p>
+                            </li>
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>Planeacion e implementacion de campañas publicitarias.</p>
+                            </li>
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>Diseño grafico y desarrollo audiovisual.</p>
+                            </li>
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>Trafficker digital y community manager.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="servicios__content">
+                <div>
+                    <i class="ri-code-line servicios__content-icon"></i>
+                    <h3 class="servicios__content-title">Diseños <br> Web</h3>
+                </div>
+                <span class="servicios__content-btns">
+                    Ver Más
+                    <i class="ri-arrow-right-line"></i>
+                </span>
+                <div class="servicios__content-modal">
+                    <div class="servicios__content-modal_data">
+                        <h4 class="servicios__content-modal_title">
+                            Diseños <br> Web
+                        </h4>
+                        <i class="ri-close-fill servicios__content-modal_close"></i>
+                        <ul class="servicios__content-modal_servicios grid">
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>Diseños de paginas web.</p>
+                            </li>
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>Creacion de sitios y aplicaciones web.</p>
+                            </li>
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>Completamente creados con tecnologias modernas.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="servicios__content">
+                <div>
+                    <i class="ri-line-chart-line servicios__content-icon"></i>
+                    <h3 class="servicios__content-title">SEO</h3>
+                </div>
+                <span class="servicios__content-btns">
+                    Ver Más
+                    <i class="ri-arrow-right-line"></i>
+                </span>
+                <div class="servicios__content-modal">
+                    <div class="servicios__content-modal_data">
+                        <h4 class="servicios__content-modal_title">
+                            SEO
+                        </h4>
+                        <i class="ri-close-fill servicios__content-modal_close"></i>
+                        <ul class="servicios__content-modal_servicios grid">
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>Buen posicionamiento en los resultados de busqueda de la web.</p>
+                            </li>
+                            <li class="servicios__content-modal_servicio">
+                                <i class="ri-checkbox-circle-line"></i>
+                                <p>SEO de calidad para asegurar el trafico de usuarios.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PORTAFOLIO -->
+    <section class="portafolio section" id="portafolio">
+        <h1 class="portafolio__title section__title">Portafolio</h1>
+        <span class="portafolio__subtitle section__subtitle">Trabajos mas recientes</span>
+        <h2 class="portafolio__categoria container">Diseños web</h2>
+        <div class="portafolio__container container grid">
+            <!-- 1 -->
+            <div class="portafolio__card">
+                <div class="portafolio__card-image">
+                    <img src="{{ url_for('static', filename='img/portafolio1.png') }}" class="portafolio__card-img" alt="Proyectos web"/>
+                </div>
+                <div class="portafolio__card-data">
+                    Pagina web adaptable a todos los dispositivos mediante un excelente diseño responsivo moderno.
+                </div>
+                <div class="portafolio__card-btns">
+                    <a href="https://remy349.github.io/rematescostarica-design-two/" class="portafolio__card-btn" target="_blank">
+                        Ver
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="portafolio__card">
+                <div class="portafolio__card-image">
+                    <img src="{{ url_for('static', filename='img/portafolio2.png') }}" class="portafolio__card-img" alt="Proyectos web"/>
+                </div>
+                <div class="portafolio__card-data">
+                    Pagina web adaptable a todos los dispositivos mediante un excelente diseño responsivo moderno.
+                </div>
+                <div class="portafolio__card-btns">
+                    <a href="https://remy349.github.io/rematescostarica-design/" class="portafolio__card-btn" target="_blank">
+                        Ver
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h2 class="portafolio__categoria container">Diseños grafico</h2>
+        <div class="portafolio__carrusel container swiper">
+            <div class="swiper-wrapper">
+                <!-- 1 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis1.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 2 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis2.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 3 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis3.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 4 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis4.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 5 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis5.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 6 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis6.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 7 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis7.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 8 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis8.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 9 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis9.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+                <!-- 10 -->
+                <div class="portafolio__carrusel-card swiper-slide">
+                    <img src="{{ url_for('static', filename='img/dis10.jpg') }}" class="portafolio__categoria-img" alt="DiseñosGraficos"/>
+                </div>
+            </div>
+        </div>
+        <h2 class="portafolio__categoria">Desarrollo visual</h2>
+        <div class="portafolio__videos container grid">
+            <!-- 1 -->
+            <div class="portafolio__videos-content">
+                <video id="videoFile">
+                    <source src="{{ url_for('static', filename='video/video1.mp4') }}" type="video/mp4">
+                </video>
+                <button class="portafolio__videos-btn" id="videoBtn">
+                    <i class="ri-play-fill portafolio__videos-icon" id="videoIcon"></i>
+                </button>
+            </div>
+            <!-- 2 -->
+            <div class="portafolio__videos-content">
+                <video id="videoFileTwo">
+                    <source src="{{ url_for('static', filename='video/video2.mp4') }}" type="video/mp4">
+                </video>
+                <button class="portafolio__videos-btn" id="videoBtnTwo">
+                    <i class="ri-play-fill portafolio__videos-icon" id="videoIconTwo"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- CONTACTO -->
+    <section class="contacto section" id="contacto">
+        <h1 class="contacto__title section__title">Contactame</h1>
+        <span class="contacto__subtitle section__subtitle">Ponte en contacto</span>
+        <div class="contacto__container container grid">
+            <div>
+                <div class="contacto__email">
+                    <i class="ri-mail-line contacto__email-icon"></i>
+                    <div>
+                        <h3 class="contacto__email-title">Correo</h3>
+                        <span class="contacto__email-subtitle">
+                            info@glitchpublicidad.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <form action="{{ url_for('send_email') }}" method="POST" accept-charset="utf-8" class="contacto__form">
+                    <div class="contacto__form-inputsCont">
+                        <div class="contacto__form-inputs">
+                            <label class="contacto__form-label">Nombre</label>
+                            <input
+                                type="text" 
+                                class="contacto__form-input" 
+                                name="firstname" 
+                                autocomplete="off" 
+                                required
+                            />
+                        </div>
+                        <div class="contacto__form-inputs">
+                            <label class="contacto__form-label">Apellido</label>
+                            <input 
+                                type="text" 
+                                class="contacto__form-input" 
+                                name="lastname" 
+                                autocomplete="off" 
+                                required
+                            />
+                        </div>
+                    </div>
+                    <div class="contacto__form-inputs">
+                        <label class="contacto__form-label">Correo</label>
+                        <input 
+                            type="email" 
+                            class="contacto__form-input" 
+                            name="email" 
+                            autocomplete="off" 
+                            required
+                        />
+                    </div>
+                    <div class="contacto__form-inputs">
+                        <label class="contacto__form-label">Telefono</label>
+                        <input 
+                            type="text" 
+                            class="contacto__form-input"
+                            name="phonenumber" 
+                            autocomplete="off" 
+                            required
+                        />
+                    </div>
+                    <div class="contacto__form-inputs">
+                        <label class="contacto__form-label">Mensaje</label>
+                        <textarea class="contacto__form-textarea" name="message" cols="0" rows="7" required></textarea>
+                    </div>
+                    <div class="contacto__form-btns">
+                        <button class="contacto__form-btn" type="submit">
+                            Enviar
+                            <i class="ri-send-plane-2-line contacto__form-icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
