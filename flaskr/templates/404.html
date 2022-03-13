@@ -5,5 +5,25 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Page not found!</h1>
+    <section class="error section">
+        <div class="error__container container grid">
+            <div class="error__image">
+                <img src="{{ url_for('static', filename='img/error.png') }}" class="error__image-img" alt="Error404"/>
+            </div>
+            <div class="error__content">
+                <h1 class="error__content-title">Pagina no encontrada</h1>
+                <p class="error__content-subtitle">
+                    Lo sentimos pero la ruta a la que intentaste ingresar no existe o no esta disponible
+                    dentro de nuestro servidor. Por favor regresa a la pagina principal para poder seguir
+                    disfrutando de nuestros servicios.
+                </p>
+                <div class="error__content-btns">
+                    <a href="{{ url_for('index') }}" class="error__content-btn">
+                        Pagina principal
+                        <i class="ri-home-2-line error__content-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock content %}

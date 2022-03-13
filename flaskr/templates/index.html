@@ -34,7 +34,7 @@
         <span class="about__subtitle section__subtitle">Nuestra presentacion</span>
         <div class="about__content container grid">
             <!-- 1 -->
-            <div class="about__card">
+            <div class="about__card card-one">
                 <div class="about__card-images">
                     <img src="{{ url_for('static', filename='img/about1.png') }}" class="about__card-img" alt="Mejorar relaciones"/>
                 </div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
             <!-- 2 -->
-            <div class="about__card">
+            <div class="about__card card-two">
                 <div class="about__card-images two">
                     <img src="{{ url_for('static', filename='img/about2.png') }}" class="about__card-img" alt="Subir de nivel"/>
                 </div>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <!-- 3 -->
-            <div class="about__card">
+            <div class="about__card card-three">
                 <div class="about__card-images">
                     <img src="{{ url_for('static', filename='img/about3.png') }}" class="about__card-img three" alt="Emprendimiento y aprendizaje"/>
                 </div>
@@ -280,7 +280,7 @@
         <div class="portafolio__videos container grid">
             <!-- 1 -->
             <div class="portafolio__videos-content">
-                <video id="videoFile">
+                <video class="portafolio__videos-video" id="videoFile">
                     <source src="{{ url_for('static', filename='video/video1.mp4') }}" type="video/mp4">
                 </video>
                 <button class="portafolio__videos-btn" id="videoBtn">
@@ -289,7 +289,7 @@
             </div>
             <!-- 2 -->
             <div class="portafolio__videos-content">
-                <video id="videoFileTwo">
+                <video class="portafolio__videos-video" id="videoFileTwo">
                     <source src="{{ url_for('static', filename='video/video2.mp4') }}" type="video/mp4">
                 </video>
                 <button class="portafolio__videos-btn" id="videoBtnTwo">

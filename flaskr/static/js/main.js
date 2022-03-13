@@ -145,4 +145,24 @@ document.addEventListener('DOMContentLoaded', () => {
             rotate: 0,
         },
     });
+
+    /* ===> SCROLL REVEAL <=== */
+    const sr = ScrollReveal({
+        distance: '60px',
+        duration: 2800,
+        reset: true,
+    });
+
+    sr.reveal(`.home__images, .card-two`, {
+        origin: 'right',
+    });
+
+    sr.reveal(`.home__data-title, .home__data-subtitle, .home__data-desc, .home__data-btns`, {
+        origin: 'left',
+        interval: 100,
+    });
+
+    sr.reveal(`.card-one, .card-three`, {
+        origin: 'left'
+    });
 });
