@@ -157,7 +157,8 @@ document.addEventListener('DOMContentLoaded', () => {
         origin: 'right',
     });
 
-    sr.reveal(`.home__data-title, .home__data-subtitle, .home__data-desc, .home__data-btns`, {
+    sr.reveal(`.home__data-title, .home__data-subtitle, .home__data-desc, .home__data-btns,
+                .home__social-link`, {
         origin: 'left',
         interval: 100,
     });
